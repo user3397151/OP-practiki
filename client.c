@@ -18,7 +18,7 @@ int main() {
 
     connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr));
 
-    char *student_info = "Тихомиров Алексей Александрович ККСО-26-24 1 курс";
+    char *student_info = "Шевченко Святослав Ильич ККСО-26-24 1 курс";
     send(sock, student_info, strlen(student_info), 0);
     printf("Данные студента отправлены серверу\n");
 
